@@ -26,14 +26,14 @@ if [ ! -f $HOME/Desktop/steam-deck.desktop ]; then
     $HOME/Desktop/steam-deck.desktop
   chmod +x $HOME/Desktop/steam-deck.desktop
 fi
-if [ ! -d $HOME/.config/sunshine ]; then
-  mkdir -p $HOME/.config/sunshine
-  cp /defaults/apps.json $HOME/.config/sunshine/
-  if [ -z ${DRINODE+x} ]; then
-    DRINODE="/dev/dri/renderD128"
-  fi
-  echo "adapter_name = ${DRINODE}" > $HOME/.config/sunshine/sunshine.conf
-fi
+# if [ ! -d $HOME/.config/sunshine ]; then
+#   mkdir -p $HOME/.config/sunshine
+#   cp /defaults/apps.json $HOME/.config/sunshine/
+#   if [ -z ${DRINODE+x} ]; then
+#     DRINODE="/dev/dri/renderD128"
+#   fi
+#   echo "adapter_name = ${DRINODE}" > $HOME/.config/sunshine/sunshine.conf
+# fi
 
 # Start sunshine in background
 # sunshine &
