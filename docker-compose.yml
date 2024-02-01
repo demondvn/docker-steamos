@@ -3,7 +3,8 @@ services:
   steamos:
     # Use a pre-built image from Docker Hub
 #    image: lscr.io/linuxserver/steamos:latest
-    image: docker-steamos
+    build: .
+      image : docker-steam
     container_name: steamos
     hostname: steamOs # optional
     privileged: true
