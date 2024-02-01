@@ -36,7 +36,7 @@ if [ ! -d $HOME/.config/sunshine ]; then
 fi
 
 # Start sunshine in background
-sunshine &
+# sunshine &
 
 # Runtime deps
 mkdir -p $HOME/.XDG
